@@ -4,6 +4,7 @@ layout: quote
 ---
 
 # GIT
+<Toc/>
 
 ---
 
