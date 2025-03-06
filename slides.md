@@ -254,9 +254,12 @@ square: -66,0,0,0
 ---
 
 dragPos:
-square: -66,0,0,0
+square: -71,0,0,0
 
 ---
+
+dragPos:
+square: -66,0,0,0
 
 # Thực hành
 
@@ -410,3 +413,50 @@ ten_nhanh
 # Thực hành
 
 <div>Hãy thử giả lập conflict và sau đó giải quyết conflict đó.</div>
+
+---
+
+# Vim
+
+<v-clicks>
+
+- Khi chạy lệnh `git merge`, nếu xảy ra conflict và bạn nhập `git commit` mà không có `-m`, Git sẽ mở Vim để yêu cầu nhập message.
+- Khi chạy lệnh `git rebase`, nếu có conflict, Git có thể mở Vim để chỉnh sửa commit.
+
+```bash
+# Please enter the commit message for your merge.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# All conflicts fixed but you are still merging.
+#
+~
+~
+~
+":"
+```
+
+</v-clicks>
+
+---
+
+# Cách thoát Vim
+
+<v-clicks>
+
+- Có 2 cách để thoát khỏi Vim:
+
+```bash
+:wq                                                 (Lưu commit message và thoát)
+```
+
+```bash
+:q!                                                (Thoát mà không lưu)
+```
+
+</v-clicks>
+
+---
+
+# The end
